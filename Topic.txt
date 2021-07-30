@@ -1,0 +1,9 @@
+1) Git
+
+2) if/esle
+
+3) Function / Arrow Function
+
+4) API 
+
+5) Class Video's 2

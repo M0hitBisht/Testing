@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/indexCSS.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>API Fetch</p>
+    <!-- 
+    let proxy = 'https://cors-anywhere.herokuapp.com' -->
+    <script>
+
+        //   let url="https://jsonplaceholder.typicode.com/posts/1/comments"
+        // let url = "http://dummy.restapiexample.com/api/v1/employees"
+        // let url = "https://jsonplaceholder.typicode.com/posts?userId=1"
+        // let url = "https://jsonplaceholder.typicode.com/posts"
+        // let url = "https://reqres.in/api/users"
+        // let url = "https://restcountries.eu/rest/v2/all"
+        let url = "https://hn.algolia.com/api/v1/search?query=svelte";
+        fetch(url)
+            .then(res => res.json())
+           .then(function(abc){
+               for(var data of abc.hits){
+                   document.write(`<li>${data.title}<li>`)
+               }
+           })
+
+
+    </script>
+
+</body>
+
+</html>
